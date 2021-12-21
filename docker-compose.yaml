@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  hotfolder:
+    build: .
+    env_file:
+      - ./dev.env
+    volumes:
+      - ./my-hotfolder:/opt/app/hotfolder
+      - ./handler.sh:/opt/app/handler.sh
